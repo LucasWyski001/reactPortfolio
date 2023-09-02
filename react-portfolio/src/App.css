@@ -17,7 +17,7 @@ body{
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #282c34 !important;
+  background-color: #121212 !important;
   color: #f1f1f1 !important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -26,6 +26,20 @@ h1, h2, h3, h4, h5, h6{
   padding:0;
   line-height: normal;
 }
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
 
 
 /* this here is for navbar css */
@@ -42,7 +56,7 @@ nav.navbar.scrolled{
   background-color: #121212;
 }
 nav.navbar a.navbar-brand{
-  width:12%;
+  width:9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link{
   font-weight: 400;
@@ -75,7 +89,7 @@ span.navbar-text {
   align-items: center;
   justify-content: center;
   line-height: 1;
-  border: 1px solid rgba(255,255,255, 0.1);
+  border: 1px solid rgba(255,255,255, 0.5);
 }
 .social-icon a::before {
   content: "";
@@ -85,7 +99,7 @@ span.navbar-text {
   background-color: #ffffff;
   border-radius: 50%;
   transform: scale(0);
-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 /* this populates for when you hover pover the icons white appears filling in the circle */
 .social-icon a:hover::before{
@@ -182,6 +196,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 /* end of css for the navbar */
 
+
+
 /* begining of the css for the hero section */
 .Hero {
   margin-top: 0;
@@ -233,7 +249,43 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
 border-right: 0.08em solid #6e6d6d;
 }
+/* end of the hero section css styling */
 
+
+
+/* beginning of the skills css styling portion */
+.skill{
+  padding: 0 0 50px 0;
+}
+.skill-box{
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.skill h2{
+  font-size: 45px;
+  font-weight: 700;
+}
+.skill p{
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
+}
+.skill-slider .item img{
+  width:15%;
+  margin: 0 auto 15px auto;
+}
+.background-image-left{
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
 
 
 
