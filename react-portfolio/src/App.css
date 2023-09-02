@@ -26,6 +26,8 @@ h1, h2, h3, h4, h5, h6{
   padding:0;
   line-height: normal;
 }
+
+
 /* this here is for navbar css */
 nav.navbar{
   padding: 18px 0;
@@ -62,6 +64,7 @@ span.navbar-text {
   display: inline-block;
   margin-left: 14px;
 }
+/* this is setting and styling the images to have borders around them */
 .social-icon a{
   width:42px;
   height: 42px;
@@ -84,6 +87,7 @@ span.navbar-text {
   transform: scale(0);
 transition: 0.3s ease-in-out;
 }
+/* this populates for when you hover pover the icons white appears filling in the circle */
 .social-icon a:hover::before{
   transform: scale(1);
 }
@@ -92,9 +96,11 @@ transition: 0.3s ease-in-out;
   z-index: 1;
   transition: 0.3s ease-in-out;
 }
+/* this gives the icon the saturation so when you hover on the images it changes to black */
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
+/* this gives form the the button with the lets connect and the white slider to fit within the content */
 .navbar-text button {
   font-weight: 700;
   color: #fff;
@@ -174,8 +180,59 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+/* end of css for the navbar */
 
-
+/* begining of the css for the hero section */
+.Hero {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url('./assets/img/heroBack.jpg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Hero .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.Hero h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+.Hero p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+.Hero img {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+  0% {
+      transform: translateY(-20px);
+  }
+  50% {
+      transform: translateY(20px);
+  }
+  100% {
+      transform: translateY(-20px);
+  }
+}
+.txt-rotate > .wrap {
+border-right: 0.08em solid #6e6d6d;
+}
 
 
 
