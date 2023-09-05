@@ -2,14 +2,14 @@ const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require('nodemailer');
-const PORT = process.env.PORT|| 5000;
+const PORT = process.env.PORT|| 3001;
 
 // these here are the servers used to send emails to well.. ME
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(5000, () => console.log("Server running is good"));
+app.listen(3001, () => console.log("Server running is good"));
 console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
