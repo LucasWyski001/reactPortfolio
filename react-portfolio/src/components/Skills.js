@@ -46,7 +46,9 @@ export const Skills = () =>{
                         <h2>
                             My Skills
                         </h2>
-                        <p>skeeda bada poo pop eeta bada</p>
+                        <p>As a Mern Stack developer here are the skills ive learned! My skills range from the fundamentals of HTML CSS and JavaScript, all the way
+                            to coding languages such as React, Node, and SQL databases such as Mongo and MySQL.
+                        </p>
                         {/* this is making the responsive so that you can click through and ALSO infinite true is so it keep looping, no end no beginning */}
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className="item">
@@ -90,7 +92,7 @@ export const Skills = () =>{
                     </Col>
                 </Row>
             </Container>
-            < img className="background-image-left" src={colorSharp}/>
+            < img className="background-image-left"  alt="background image of skills" src={colorSharp}/>
         </section>
         )
 

@@ -4,6 +4,8 @@ import { Container, Row, Col } from "react-bootstrap";
 // going to add some type of image here
 // update image is added i repeat image is added
 import heroImg from "../assets/img/hero-img.svg";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 
 
@@ -51,9 +53,15 @@ export const Hero = () =>{
         <Container>
             <Row className="align-items-center">
                 <Col xs={12} md={6} xl={7}>
+                    <TrackVisibility>
+                    {({isVisible}) =>
+                    <div className={isVisible ? "animate__heartBeat" : ""}>
                     <span className="tagline">Welcome! This is my portfolio!</span>
                     <h1>{`Hi, I'm Lucas! `}<span className="wrap">{text}</span></h1>
-                    <p>something eventually will go here idk yet but get ready to see!</p>
+                    <p>Living in Austin, Texas, I'm a Mern stack developer with a taste for Front end development! welcome to my portfolio!</p>
+                    </div>
+                    }
+                    </TrackVisibility>
                 </Col>
                 <Col xs={12} md={6} xl={5}>
                     <img src={heroImg} alt="Hero Image"/>

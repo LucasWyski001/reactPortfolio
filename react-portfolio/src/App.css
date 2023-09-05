@@ -58,6 +58,9 @@ nav.navbar.scrolled{
 nav.navbar a.navbar-brand{
   width:9%;
 }
+nav.navbar a.navbar-brand img{
+  border-radius: 50%;
+}
 nav.navbar .navbar-nav .nav-link.navbar-link{
   font-weight: 400;
   color:#f1f1f1 !important;
@@ -499,8 +502,30 @@ border-right: 0.08em solid #6e6d6d;
 .contact form button:hover::before {
   width: 100%;
 }
+/* this is the end of the contact section, sorry baws */
 
 
+/* beginning of footer we pretty much done ish */
+.footer {
+  padding: 80px 200px 50px 0;
+  background-image: url('./assets/img/footer-bg.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer img {
+  width: 25%;
+}
+#footer-img{
+  border-radius: 50%;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 50px;
+}
 
 
 

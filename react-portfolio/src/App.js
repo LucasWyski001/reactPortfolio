@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 // for some reason this is red but file works? but when it fixes it errors?
 import { NavBar } from './components/NavBar';
@@ -7,7 +7,7 @@ import { Skills } from './components/Skills';
 import {Projects} from './components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Contact} from './components/Contact';
-
+import {Footer} from './components/Footer';
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }
