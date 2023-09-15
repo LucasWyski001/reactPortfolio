@@ -5,6 +5,7 @@ import projImg1 from "../assets/img/project1.jpg";
 import projImg2 from "../assets/img/tech-blog.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import projImg3 from "../assets/img/PROJ3PORT.png"
 
 
 
@@ -22,6 +23,12 @@ export const Projects= () =>{
             description: "This project uses Node.JS, Express, HandleBars, MySQL2. This application is a place where users can create an account, comment on other posts, and edit/delete there own posts.",
             imgUrl: projImg2,
             projectLink: "https://tech-bloggers-5fd0dafa339d.herokuapp.com/",
+        },
+        {
+            title:"Water Enviorment Tracker",
+            description: "This project is developed using the MERN stack, Mongo.db, express, React, and node. I worked on this application with a group where we created an app where users can find filtered water and fountains while out DISCLAIMER: THIS WEB APP IS RESPONSIVE BUT MADE FOR MOBILE",
+            imgUrl: projImg3,
+            projectLink: "https://water-environment-tracker-286add31110c.herokuapp.com/",
         },
     ]
     return(

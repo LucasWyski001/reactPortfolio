@@ -398,6 +398,9 @@ border-right: 0.08em solid #6e6d6d;
   top: 50%;
   opacity: 1;
 }
+.proj img{
+  height:400px;
+}
 .proj-txtx h4 {
   font-size: 30px;
   font-weight: 700;
