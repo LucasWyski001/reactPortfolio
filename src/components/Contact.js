@@ -25,7 +25,7 @@ export const Contact = () =>{
         e.preventDefault();
         setButtonText('Sending...');
         // add local host here
-        let response = await fetch("https://lucaswyskidevelops.com/contact",{
+        let response = await fetch("https://lucaswyskidevelops.com/#contact",{
             method: "POST",
             headers: {
                 "Content-Type": "Application/json;charset=utf-8"
