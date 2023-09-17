@@ -1,54 +1,52 @@
 const express = require("express");
 const router = express.Router();
 const cors = require("cors");
-const nodemailer = require("nodemailer");
+const nodemailer = require('nodemailer');
 
+// these here are the servers used to send emails to well.. ME
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-
-const port = process.env.PORT || 5000;
+app.listen(5000, () => console.log("Server running is good"));
+console.log(process.env.EMAIL_USER);
+console.log(process.env.EMAIL_PASS);
 
 const contactEmail = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
+    service: 'gmail',
+    auth: {
+        user: "lucaswyski01@gmail.com",
+        pass: "qmnsusyhcbwhprno"
+    },
 });
 
-contactEmail.verify((error) => {
-  if (error) {
-    console.log(error);
-  } else {
-    console.log("Ready to Send Mail");
-  }
+contactEmail.verify((error) =>{
+    if(error){
+        console.log(error);
+    }else{
+        console.log("Ready to Send Mail");
+    }
 });
 
 router.post("/contact", (req, res) => {
-  const { firstName, lastName, email, phone, message } = req.body;
-
-  const name = `${firstName} ${lastName}`;
-
-  const mail = {
-    from: name,
-    to: "lucaswyski01@gmail.com",
-    subject: "Contact Form Submission - Portfolio",
-    html: `<p>Name: ${name}</p>
-           <p>Email: ${email}</p>
-           <p>Phone: ${phone}</p>
-           <p>Message: ${message}</p>`,
-  };
-
-  contactEmail.sendMail(mail, (error) => {
-    if (error) {
-      console.error(error);
-      res.status(500).json({ error: "An error occurred while sending the email." });
-    } else {
-      res.status(200).json({ status: "Message Sent" });
-    }
+    const name = req.body.firstName + req.body.lastName;
+    const email = req.body.email;
+    const message = req.body.message;
+    const phone = req.body.phone;
+    const mail = {
+      from: name,
+      to: "lucaswyski01@gmail.com",
+      subject: "Contact Form Submission - Portfolio",
+      html: `<p>Name: ${name}</p>
+             <p>Email: ${email}</p>
+             <p>Phone: ${phone}</p>
+             <p>Message: ${message}</p>`,
+    };
+    contactEmail.sendMail(mail, (error) => {
+      if (error) {
+        res.json(error);
+      } else {
+        res.json({ code: 200, status: "Message Sent" });
+      }
+    });
   });
-});
-
-app.listen(port, () => console.log(`Server is running on port ${port}`));
