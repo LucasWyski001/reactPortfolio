@@ -72,7 +72,7 @@ export const Projects= () =>{
                                 </Row>
                             </Tab.Pane>
                             <Tab.Pane eventKey ="second">
-                            <img src={portimg} alt="Image of Lucas Wysoczanski for about me image" style={{  borderRadius: "50%", height: "350px", width:"400px"}} />
+                            <img src={portimg} alt="Image of Lucas Wysoczanski for about me image" style={{  borderRadius: "50%", height: "350px", width:"400px", maxWidth: "100%", height:"auto"}} />
                             <br></br>
                                 Hello! I am Lucas Wysoczanski. I started my Web Development Journey around 2021, where I started learning self taught. There I learned the fundamentals of<br>
                                 </br> HTML, CSS, and JavaScript. Being highly motivated for this field and learning amazing things and the power of code, I decided to enroll into UT FullStack<br></br>

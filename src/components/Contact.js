@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import { Col, Row, Container } from 'react-bootstrap';
 import contactImg from '../assets/img/contactImg.svg'
 export const Contact = () =>{
