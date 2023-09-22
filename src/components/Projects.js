@@ -8,6 +8,7 @@ import TrackVisibility from 'react-on-screen';
 import projImg3 from "../assets/img/PROJ3PORT.png";
 import portimg from "../assets/img/REACTPORTIMG.jpg";
 import { Border } from "react-bootstrap-icons";
+import projImg4 from "../assets/img/portfolioOG.jpg";
 
 
 
@@ -32,6 +33,12 @@ export const Projects= () =>{
             imgUrl: projImg3,
             projectLink: "https://water-environment-tracker-286add31110c.herokuapp.com/",
         },
+        {
+            title: "Portfolio 1.0",
+            description: "This is another of my portfolios where I used HTML, CSS, and JS to complete, this is mobile responsive where there is a hamburger nav bar where it comes from the right.",
+            imgUrl: projImg4,
+            projectLink : "https://lucaswyski001.github.io/job-portfolio/"
+        }
     ]
     return(
         <section className="project" id="projects">

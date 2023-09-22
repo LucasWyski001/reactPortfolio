@@ -3,7 +3,7 @@ import logo from "../assets/img/LOGObackGround.jpg";
 import navIcon1 from '../assets/img/nav-icon1.svg';
 // import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
-
+import github from '../assets/img/github-mark-white.svg'
 export const Footer = () =>{
     return(
         <footer className="footer">
@@ -16,6 +16,7 @@ export const Footer = () =>{
                         <div className="social-icon">
                             <a href="https://www.linkedin.com/in/lucas-wysoczanski-77436b239/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} /></a>
                             <a href="https://instagram.com/lukaszwysoczanski?igshid=OGQ5ZDc2ODk2ZA==/" target="_blank" rel="noopener noreferrer"><img src={navIcon3} /></a>
+                            <a href="https://github.com/LucasWyski001" target="_blank" rel="noopener noreferrer"><img src={github} alt=""/></a>
                         </div>
                         <p>CopyRight 2023. All Rights Reserved</p>
                     </Col>
