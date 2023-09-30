@@ -27,12 +27,13 @@ export const Projects= () =>{
             imgUrl: projImg2,
             projectLink: "https://tech-bloggers-5fd0dafa339d.herokuapp.com/",
         },
-        {
-            title:"Water Enviorment Tracker",
-            description: "This project is developed using the MERN stack, Mongo.db, express, React, and node. I worked on this application with a group where we created an app where users can find filtered water and fountains while out DISCLAIMER: THIS WEB APP IS RESPONSIVE BUT MADE FOR MOBILE",
-            imgUrl: projImg3,
-            projectLink: "https://water-environment-tracker-286add31110c.herokuapp.com/",
-        },
+        // this will eventually be readded once its completed in development
+        // {
+        //     title:"Water Enviorment Tracker",
+        //     description: "This project is developed using the MERN stack, Mongo.db, express, React, and node. I worked on this application with a group where we created an app where users can find filtered water and fountains while out DISCLAIMER: THIS WEB APP IS RESPONSIVE BUT MADE FOR MOBILE",
+        //     imgUrl: projImg3,
+        //     projectLink: "https://water-environment-tracker-286add31110c.herokuapp.com/",
+        // },
         {
             title: "Portfolio 1.0",
             description: "This is another of my portfolios where I used HTML, CSS, and JS to complete, this is mobile responsive where there is a hamburger nav bar where it comes from the right.",

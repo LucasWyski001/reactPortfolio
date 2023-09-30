@@ -48,26 +48,26 @@ export const Hero = () =>{
 
 
 
-    return(
-      <section className="Hero" id="home">
+    return (
+        <section className="Hero" id="home">
         <Container>
             <Row className="align-items-center">
                 <Col xs={12} md={6} xl={7}>
                     <TrackVisibility>
-                    {({isVisible}) =>
-                    <div className={isVisible ? "animate__heartBeat" : ""}>
-                    <span className="tagline">Welcome! This is my portfolio!</span>
-                    <h1>{`Hi, I'm Lucas! `}<span className="wrap">{text}</span></h1>
-                    <p>Living in Austin, Texas, I'm a Mern stack developer with a taste for Front end development! welcome to my portfolio!</p>
-                    </div>
-                    }
+                        {({ isVisible }) => (
+                            <div className={isVisible ? "animate__heartBeat" : ""}>
+                                <span className="tagline">Welcome! This is my portfolio!</span>
+                                <h1>{`Hi, I'm Lucas! `}<span className="wrap">{text}</span></h1>
+                                <p>Living in Austin, Texas, I'm a Mern stack developer with a taste for Front end development! welcome to my portfolio!</p>
+                            </div>
+                        )}
                     </TrackVisibility>
                 </Col>
                 <Col xs={12} md={6} xl={5}>
-                    <img src={heroImg} alt="Hero Image"/>
+                    <img src={heroImg} alt="Hero Image" />
                 </Col>
             </Row>
         </Container>
-      </section>  
+        </section>
     )
 }
